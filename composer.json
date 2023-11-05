@@ -1,0 +1,32 @@
+{
+  "name": "hannan/di-container",
+  "type": "project",
+  "require": {
+    "psr/container": "^2.0",
+    "symfony/http-kernel": "^6.3"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Legend\\": "src/",
+      "App\\": "app/"
+    },
+    "files": [
+      "src/Foundation/helpers.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Hannan Miah"
+    }
+  ],
+  "require-dev": {
+    "pestphp/pest": "^2.24",
+    "symfony/var-dumper": "^6.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
